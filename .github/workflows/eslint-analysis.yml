@@ -27,3 +27,11 @@ jobs:
           // Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
   ```
+  on:
+   push:
+      branches: [main, protected]
+   pull_request:
+      branches: [main]
+      paths-ignore:
+         - '**/*.md'
+         - '**/*.txt'
