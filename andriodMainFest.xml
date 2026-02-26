@@ -1,0 +1,8 @@
+<uses-permission android:name="android.permission.INTERNET" />
+implementation("io.coil-kt:coil-compose:2.4.0") // Use 'coil' instead of 'coil-compose' for XML
+AsyncImage(
+    model = "https://github.com/barkuntasrinivas2025-stack/my-first-project./blob/photo/WhatsApp%20Image%202026-02-26%20at%2011.13.33.jpeg",
+    contentDescription = "GitHub Image"
+)
+val imageView: ImageView = findViewById(R.id.my_image)
+imageView.load("https://github.com/barkuntasrinivas2025-stack/my-first-project./blob/photo/WhatsApp%20Image%202026-02-26%20at%2011.13.33.jpeg")
